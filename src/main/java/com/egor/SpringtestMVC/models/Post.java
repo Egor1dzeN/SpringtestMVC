@@ -13,15 +13,27 @@ public class Post {
 
    private String title,anons,full_text;
    private int views;
+   private int views_2;
 
-   Post(){}
+    public int getViews_2() {
+        return views_2;
+    }
 
-    public Post(Long id, String title, String anons, String full_text, int views) {
+    public void setViews_2(int views_2) {
+        this.views_2 = views_2;
+    }
+
+    public Post(){
+
+   }
+
+    public Post(Long id, String title, String anons, String full_text, int views,int views_2) {
         this.id = id;
         this.title = title;
         this.anons = anons;
         this.full_text = full_text;
         this.views = views;
+        this.views_2 = views_2;
     }
 
     public Long getId() {
